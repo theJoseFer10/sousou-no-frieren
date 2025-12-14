@@ -115,7 +115,7 @@ body{
 }
 
 .character-card img{
-    width: 20rem;
+    width: 13rem;
 }
 
 .character-card:hover{
@@ -133,4 +133,30 @@ body{
     margin-bottom: 1rem;
 }
 
+#imagenes{
+    margin-top: 8rem;
+}
+
 /*Carrusel de imagenes*/
+#carrusel{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+#track{
+    display: flex;
+    gap: 2rem;
+    animation: mover 20s linear infinite;
+}
+
+#track img{
+    width: 40rem;
+}
+
+/* Animación automática */
+@keyframes mover {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-10%); }
+}
