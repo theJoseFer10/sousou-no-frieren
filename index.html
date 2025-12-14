@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
     <title>sousou no frieren</title>
 </head>
 <body>
-    <header>
+    <header id="head">
         <nav>
-            <a href="#inicio">Inicio.</a>
-            <a href="#sinops">Sinopsis</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#sinopsis">Sinopsis</a>
             <a href="#personajes">Personajes</a>
             <a href="#imagenes">Imagenes</a>
             <a href="#calificacion">Calificacion</a>
@@ -20,6 +21,7 @@
             <!--Apartado de inicio y titulo.-->
             <section id="inicio">
                 <h1>Sousou no frieren.</h1>
+                <p>Mas alla del viaje.</p>
             </section>
 
             <!--Apartado de sinopsis y resumen.-->
@@ -63,92 +65,98 @@
 
             <!--Apartado de personajes.-->
             <section id="personajes">
-                <h1>Personajes principales.</h1>
-                <div class="character-card">
-                    <h3>Frieren</h3>
-                    <p>
-                        Es una maga elfa con una vida extremadamente larga. Tras la derrota del Rey 
-                        Demonio, comienza un nuevo viaje para comprender mejor a los humanos, las 
-                        emociones y el valor del tiempo. Es tranquila, reflexiva y muy poderosa en magia.
-                    </p>
-                    <img src="#" alt="Imagen de frieren">
+                <h2>Personajes principales.</h2>
+                <div class="character-cotent">
+                    <div class="character-card">
+                        <h3>Frieren</h3>
+                        <p>
+                            Es una maga elfa con una vida extremadamente larga. Tras la derrota del Rey 
+                            Demonio, comienza un nuevo viaje para comprender mejor a los humanos, las 
+                            emociones y el valor del tiempo. Es tranquila, reflexiva y muy poderosa en magia.
+                        </p>
+                        <img src="IMGS/frieren.jpg" alt="Imagen de frieren">
+                    </div>
+
+                    <div class="character-card">
+                        <h3>Fern</h3>
+                        <p>
+                            Aprendiz de Frieren. Es una maga humana seria y responsable, con un gran talento 
+                            mágico. Aporta madurez al grupo y representa el contraste entre la corta vida 
+                            humana y la longevidad de Frieren.
+                        </p>
+                        <img src="IMGS/fren.png" alt="Imagen de fren">
+                    </div>
+
+                    <div class="character-card">
+                        <h3>Stark</h3>
+                        <p>
+                            Guerrero humano y discípulo del héroe Eisen. Aunque es fuerte físicamente, 
+                            suele ser inseguro y temeroso. Su carácter amable y su crecimiento personal 
+                            lo convierten en un miembro importante del grupo.
+                        </p>
+                        <img src="IMGS/Stark.webp" alt="Imagen de Stark">
+                    </div>
                 </div>
 
-                <div class="character-card">
-                    <h3>Fern</h3>
-                    <p>
-                        Aprendiz de Frieren. Es una maga humana seria y responsable, con un gran talento 
-                        mágico. Aporta madurez al grupo y representa el contraste entre la corta vida 
-                        humana y la longevidad de Frieren.
-                    </p>
-                    <img src="#" alt="Imagen de fren">
-                </div>
+                <h2>Personajes secundarios</h2>
 
-                <div class="character-card">
-                    <h3>Stark</h3>
-                    <p>
-                        Guerrero humano y discípulo del héroe Eisen. Aunque es fuerte físicamente, 
-                        suele ser inseguro y temeroso. Su carácter amable y su crecimiento personal 
-                        lo convierten en un miembro importante del grupo.
-                    </p>
-                    <img src="#" alt="Imagen de Stark">
-                </div>
+                <div class="character-cotent">
+                    <div class="character-card">
+                        <h3>Himmel</h3>
+                        <p>
+                            El héroe del grupo original que derrotó al Rey Demonio. Era carismático, 
+                            bondadoso y muy querido por la gente. Su muerte marca profundamente a Frieren 
+                            y es el detonante de su viaje emocional.
+                        </p>
+                        <img src="#" alt="Imagen de Himmel">
+                    </div>
 
-                <div class="character-card">
-                    <h3>Himmel</h3>
-                    <p>
-                        El héroe del grupo original que derrotó al Rey Demonio. Era carismático, 
-                        bondadoso y muy querido por la gente. Su muerte marca profundamente a Frieren 
-                        y es el detonante de su viaje emocional.
-                    </p>
-                    <img src="#" alt="Imagen de Himmel">
-                </div>
+                    <div class="character-card">
+                        <h3>Eisen</h3>
+                        <p>
+                            Guerrero enano del grupo original. Es fuerte, serio y disciplinado. 
+                            Fue el maestro de Stark y sigue vivo gracias a la larga esperanza de 
+                            vida de los enanos.
+                        </p>
+                        <img src="#" alt="Imagen de Eisen">
+                    </div>
 
-                <div class="character-card">
-                    <h3>Eisen</h3>
-                    <p>
-                        Guerrero enano del grupo original. Es fuerte, serio y disciplinado. 
-                        Fue el maestro de Stark y sigue vivo gracias a la larga esperanza de 
-                        vida de los enanos.
-                    </p>
-                    <img src="#" alt="Imagen de Eisen">
-                </div>
+                    <div class="character-card">
+                        <h3>Heiter</h3>
+                        <p>
+                            Sacerdote humano del grupo original. Era alegre y algo irresponsable, 
+                            pero muy sabio. Antes de morir, confía a Fern al cuidado de Frieren.
+                        </p>
+                        <img src="#" alt="Imagen de Heiter">
+                    </div>
 
-                <div class="character-card">
-                    <h3>Heiter</h3>
-                    <p>
-                        Sacerdote humano del grupo original. Era alegre y algo irresponsable, 
-                        pero muy sabio. Antes de morir, confía a Fern al cuidado de Frieren.
-                    </p>
-                    <img src="#" alt="Imagen de Heiter">
-                </div>
+                    <div class="character-card">
+                        <h3>Falmme</h3>
+                        <p>
+                            Legendaria maga humana y antigua maestra de Frieren. Le enseñó no solo magia, 
+                            sino también la importancia de convivir con los humanos y comprender sus 
+                            sentimientos.
+                        </p>
+                        <img src="#" alt="Imagende de Falmme">
+                    </div>
 
-                <div class="character-card">
-                    <h3>Falmme</h3>
-                    <p>
-                        Legendaria maga humana y antigua maestra de Frieren. Le enseñó no solo magia, 
-                        sino también la importancia de convivir con los humanos y comprender sus 
-                        sentimientos.
-                    </p>
-                    <img src="#" alt="Imagende de Falmme">
-                </div>
+                    <div class="character-card">
+                        <h3>Rey demonio</h3>
+                        <p>
+                            Antagonista principal del pasado. Fue derrotado por el grupo de héroes antes 
+                            del inicio de la historia.
+                        </p>
+                        <img src="#" alt="Imagen del Rey demonio">
+                    </div>
 
-                <div class="character-card">
-                    <h3>Rey demonio</h3>
-                    <p>
-                        Antagonista principal del pasado. Fue derrotado por el grupo de héroes antes 
-                        del inicio de la historia.
-                    </p>
-                    <img src="#" alt="Imagen del Rey demonio">
-                </div>
-
-                <div class="character-card">
-                    <h3>Serie</h3>
-                    <p>
-                        Una poderosa y antigua maga que evalúa a otros magos. Representa una visión fría 
-                        y estricta de la magia.
-                    </p>
-                    <img src="#" alt="Imagen de Serie">
+                    <div class="character-card">
+                        <h3>Serie</h3>
+                        <p>
+                            Una poderosa y antigua maga que evalúa a otros magos. Representa una visión fría 
+                            y estricta de la magia.
+                        </p>
+                        <img src="#" alt="Imagen de Serie">
+                    </div>
                 </div>
             </section>
 
