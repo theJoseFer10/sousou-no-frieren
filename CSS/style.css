@@ -135,14 +135,17 @@ body{
 
 #imagenes{
     margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 /*Carrusel de imagenes*/
-#carrusel{
+.carrusel{
     width: 100%;
     display: flex;
     gap: 2rem;
     overflow: hidden;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
 }
 
 #track{
@@ -155,8 +158,58 @@ body{
     width: 40rem;
 }
 
+#track2{
+    display: flex;
+    gap: 2rem;
+    animation: mover2 20s linear infinite;
+}
+
+#track2 img{
+    width: 40rem;
+}
+
+.anime-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    margin-top: 4rem;
+}
+
+.anime-header img{
+    width: 300px;
+    border-radius: 1rem;
+}
+
+.anime-main-info{
+    text-align: center;
+}
+.anime-main-info h2{
+    margin-bottom: 1rem;
+}
+.stants-container{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.stant-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /* Animación automática */
 @keyframes mover {
+    from { transform: translateX(-10%); }
+    to   { transform: translateX(0); }
+}
+
+@keyframes mover2 {
     from { transform: translateX(0); }
     to   { transform: translateX(-10%); }
 }
