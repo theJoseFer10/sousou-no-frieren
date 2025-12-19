@@ -4,24 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="IMGS/favicon.ico" type="image/x-icon">
     <title>sousou no frieren</title>
 </head>
 <body>
     <header id="head">
         <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#sinopsis">Sinopsis</a>
-            <a href="#personajes">Personajes</a>
-            <a href="#imagenes">Imagenes</a>
-            <a href="#calificacion">Calificacion</a>
+            <div id="opciones">
+                <a href="#inicio">Inicio</a>
+                <a href="#sinopsis">Sinopsis</a>
+                <a href="#personajes">Personajes</a>
+                <a href="#imagenes">Imágenes</a>
+                <a href="#calificacion">calificación</a>
+            </div>
+            <div id="menu-hamburguesa">
+                <button id="menu_button">
+                    <img src="IMGS/icons/menu.svg" alt="Icono de menu de hamburguesa">
+                </button>
+            </div>
         </nav>
     </header>
+    <aside id="sidebar">
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sinopsis">Sinopsis</a></li>
+            <li><a href="#personajes">Personajes</a></li>
+            <li><a href="#imagenes">Imágenes</a></li>
+            <li><a href="#calificacion">Calificación</a></li>
+        </ul>
+        <button id="close_sidebar">
+            X
+        </button>
+    </aside>
     <main>
         <div id="global-content">
             <!--Apartado de inicio y titulo.-->
             <section id="inicio">
                 <h1>Sousou no frieren.</h1>
-                <p>Mas alla del viaje.</p>
+                <p>Más allá del viaje.</p>
             </section>
 
             <!--Apartado de sinopsis y resumen.-->
@@ -42,7 +62,7 @@
                     valorar los recuerdos y aprender qué significa realmente el tiempo y las relaciones 
                     humanas.
                 </p>
-                <h2>Descripcion</h2>
+                <h2>Descripción</h2>
                 <p>
                     Sousou no Frieren es una obra que se aleja de la fantasía tradicional para ofrecer 
                     una historia profunda, tranquila y reflexiva. A través del viaje de Frieren, 
@@ -162,6 +182,7 @@
 
             <!--Seccion de carrusel de imagenes.-->
             <section id="imagenes">
+                <h2>Imágenes de la serie.</h2>
                 <div class="carrusel">
                     <div id="track">
                         <!--Primera carga-->
@@ -231,8 +252,15 @@
                 </div>
             </section>
         </div>
+        <a 
+        href="https://www.youtube.com/watch?v=QoGM9hCxr4k" 
+        class="btn-float"
+        target="_blank">
+            <span>Ver opening</span>
+        </a>
     </main>
 </body>
 <script src="JS/carrusel.js"></script>
 <script src="JS/api_data.js"></script>
+<script src="JS/sidebar.js"></script>
 </html>
