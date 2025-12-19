@@ -46,24 +46,40 @@ body{
 }
 
 /*Seccion de inicio.*/
-#inicio{
-    min-height: 60vh;
+#inicio {
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../IMGS/carrusel/img1.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 2rem 0 4rem 0;
+    color: white;
 }
 
-#inicio h1{
-    font-size: 2.6rem;
-    letter-spacing: 2px;
+#inicio h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-#inicio p{
-    font-size: 1.6rem;
-    opacity: 0.85;
-    margin-top: 0.5rem;
+#inicio p {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    max-width: 700px;
+    line-height: 1.6;
+    opacity: 0.95;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /*Sinopsis*/
@@ -107,6 +123,9 @@ body{
 
 /*Tarjetas*/
 .character-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgba(255, 255, 455, 0.06);
     padding: 1.5rem;
     border-radius: 1.5rem;
@@ -116,6 +135,7 @@ body{
 
 .character-card img{
     width: 13rem;
+    border-radius: 1rem;
 }
 
 .character-card:hover{
@@ -132,6 +152,7 @@ body{
     font-size: 0.95rem;
     margin-bottom: 1rem;
 }
+
 
 #imagenes{
     margin-top: 8rem;
